@@ -1,9 +1,14 @@
 package modelo;
 
-public class Serie extends Titulo{
+public class Serie  extends Titulo{
     private int temporadas;
     private int episodiosPorTemporada;
     private int duracionEnMinutosPorEpisodio;
+
+    @Override
+    public int getTiempoDeDuracionEnMinutos() {
+        return duracionEnMinutosPorEpisodio * episodiosPorTemporada * temporadas;
+    }
 
     public int getTemporadas() {
         return temporadas;
@@ -21,13 +26,6 @@ public class Serie extends Titulo{
         this.episodiosPorTemporada = episodiosPorTemporada;
     }
 
-    @Override
-    public int gettiempoDeDuracionEnMinutos() {
-        return duracionEnMinutosPorEpisodio * episodiosPorTemporada * temporadas;
-    }
-
-    
-
     public int getDuracionEnMinutosPorEpisodio() {
         return duracionEnMinutosPorEpisodio;
     }
@@ -35,6 +33,4 @@ public class Serie extends Titulo{
     public void setDuracionEnMinutosPorEpisodio(int duracionEnMinutosPorEpisodio) {
         this.duracionEnMinutosPorEpisodio = duracionEnMinutosPorEpisodio;
     }
-
-
 }

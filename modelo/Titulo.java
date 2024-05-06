@@ -1,63 +1,62 @@
 package modelo;
 
 public class Titulo {
-    private String  nombre;
+    private String nombre;
     private int fechaDeLanzamiento;
-    private double  evaluacion;
+    private double evaluacion;
     private boolean incluidoEnElPlanBasico;
-    private String  sinopsis;
+    private String sinopsis;
     private int tiempoDeDuracionEnMinutos;
 
-    public String   getNombre(){
+    public String getNombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre){
+    public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public int   getfechaDeLanzamiento(){
+    public int getFechaDeLanzamiento() {
         return fechaDeLanzamiento;
     }
 
-    public void setfechaDeLanzamiento(int   fechaDeLanzamiento){
+    public void setFechaDeLanzamiento(int fechaDeLanzamiento) {
         this.fechaDeLanzamiento = fechaDeLanzamiento;
     }
 
-    public double   getevaluacion(){
+    public double getEvaluacion() {
         return evaluacion;
     }
 
-    public boolean  getincluidoEnElPlanBasico(){
+
+    public boolean isIncluidoEnElPlanBasico() {
         return incluidoEnElPlanBasico;
     }
 
-    public void setincluidoEnElPlanBasico(boolean    incluidoEnElPlanBasico){
+    public void setIncluidoEnElPlanBasico(boolean incluidoEnElPlanBasico) {
         this.incluidoEnElPlanBasico = incluidoEnElPlanBasico;
     }
 
-    public String   getsinopsis(){
+    public String getSinopsis() {
         return sinopsis;
     }
 
-    public void setsinopsis(String sinopsis){
+    public void setSinopsis(String sinopsis) {
         this.sinopsis = sinopsis;
     }
 
-    public int   gettiempoDeDuracionEnMinutos(){
+    public int getTiempoDeDuracionEnMinutos() {
         return tiempoDeDuracionEnMinutos;
     }
 
-    public void settiempoDeDuracionEnMinutos(int   tiempoDeDuracionEnMinutos){
+    public void setTiempoDeDuracionEnMinutos(int tiempoDeDuracionEnMinutos) {
         this.tiempoDeDuracionEnMinutos = tiempoDeDuracionEnMinutos;
     }
 
     public void muestraFichaTecnica(){
-        System.out.println("------------------------------");
-        System.out.println("****FICHA TECNICA****");
-        System.out.println("Nombre del Titulo : " + nombre);
-        System.out.println("Fecha de Lanzamiento : "+ fechaDeLanzamiento);
-        System.out.println("Tiempo de Duracion : " + gettiempoDeDuracionEnMinutos() + " minutos");
-
+        System.out.println("****FICHA TÉCNICA****");
+        System.out.println("Nombre del título: " + nombre);
+        System.out.println("Fecha de Lanzamiento: " + fechaDeLanzamiento);
+        System.out.println("Tiempo de duración: " + getTiempoDeDuracionEnMinutos() + " minutos");
     }
 }
